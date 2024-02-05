@@ -5,49 +5,61 @@ let result=''
 
 
 
-buttons.forEach((btns)=>{
-  btns.addEventListener('click', ()=>{
+    buttons.forEach((btns)=>{
+        btns.addEventListener('click', ()=>{
 
 
-   
-    if(btns.value ==='='){
-    //  storeNumber= storeNumber.toString()
-     result= eval(storeNumber)
-     dispaly.value=result
-     storeNumber=result;
-     console.log(result)
-
-    }else if (btns.value === 'AC'){
-      storeNumber=storeNumber.toString().slice(0, -1)
-      dispaly.value= storeNumber
-    }
-    else{
-      if( btns.value === '+' & storeNumber.toString().slice(-1) === '+'||  btns.value === '*' & storeNumber.toString().slice(-1) === '*'||btns.value === '/' & storeNumber.toString().slice(-1) === '/'||btns.value === '-' & storeNumber.toString().slice(-1) === '-'){
         
-        console.log('hi')
-        // storeNumber+= btns.value
-        // dispaly.value= storeNumber
-        // console.log(storeNumber)
-      }else{
+          if(btns.value ==='='){
+                    //  storeNumber= storeNumber.toString()
+                    result= eval(storeNumber)
+                    dispaly.value=result
+                    storeNumber=result;
+                    console.log(result)
+                  
+                  
+                  
+                  }
 
-        storeNumber+= btns.value
-        dispaly.value= storeNumber
-        
-        // storeNumber= storeNumber.split(',')
-        console.log(storeNumber.slice(-1))
-        console.log(storeNumber)
+
+
+          else if(btns.value === 'AC'){
+                    storeNumber=storeNumber.toString().slice(0, -1)
+                    dispaly.value= storeNumber
+                  }
+
+
+          else{
+                    if( btns.value === '+' & storeNumber.toString().slice(-1) === '+'||  btns.value === '*' & storeNumber.toString().slice(-1) === '*'||btns.value === '/' & storeNumber.toString().slice(-1) === '/'||btns.value === '-' & storeNumber.toString().slice(-1) === '-'){
+                      
+                      console.log('hi')
+                      // storeNumber+= btns.value
+                      // dispaly.value= storeNumber
+                      // console.log(storeNumber)
+                  }
+                    else{
+
+                      storeNumber+= btns.value
+                      dispaly.value= storeNumber
+                      
+                      // storeNumber= storeNumber.split(',')
+                      console.log(storeNumber.slice(-1))
+                      console.log(storeNumber)
+                      }
+                    // storeNumber+= btns.value
+                    // dispaly.value= storeNumber
+                    // console.log(storeNumber)
+                
         }
-      // storeNumber+= btns.value
-      // dispaly.value= storeNumber
-      // console.log(storeNumber)
-  
-  }
-  // console.log(typeof(storeNumber))
-
-  })
 
 
-})
+        
+        // console.log(typeof(storeNumber))
+
+        })
+
+
+    })
 
 
 
