@@ -16,6 +16,7 @@ let result=''
                     dispaly.value=result
                     storeNumber=result;
                     console.log(result)
+                    storeNumber= storeNumber.toString()
                   
                   
                   
@@ -30,7 +31,7 @@ let result=''
 
 
           else{
-                    if( btns.value === '+' & storeNumber.toString().slice(-1) === '+'||  btns.value === '*' & storeNumber.toString().slice(-1) === '*'||btns.value === '/' & storeNumber.toString().slice(-1) === '/'||btns.value === '-' & storeNumber.toString().slice(-1) === '-'){
+                    if( btns.value === '+' & storeNumber.slice(-1) === '+'||  btns.value === '*' & storeNumber.slice(-1) === '*'||btns.value === '/' & storeNumber.slice(-1) === '/'||btns.value === '-' & storeNumber.slice(-1) === '-'){
                       
                       console.log('hi')
                       // storeNumber+= btns.value
